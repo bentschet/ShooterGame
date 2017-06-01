@@ -1,5 +1,5 @@
 ﻿using System;
-
+using ShooterGame.Controller;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -13,6 +13,7 @@ namespace ShooterGame.Controller
 	{
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
+		private Player player;
 
 		public Game1()
 		{
@@ -29,7 +30,7 @@ namespace ShooterGame.Controller
 		protected override void Initialize()
 		{
 			// TODO: Add your initialization logic here
-
+			player = new Player();
 			base.Initialize();
 		}
 
@@ -42,6 +43,10 @@ namespace ShooterGame.Controller
 			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
+		// Load the player resources 
+		Vector2 playerPosition = new Vector2(GraphicsDevice.Viewport.TitleSafeArea.X, GraphicsDevice.Viewport.TitleSafeArea.Y + GraphicsDevice.Viewport.TitleSafeArea.Height / 2);
+
+		player.Initialize(Content.Load<Texture2D>("Texture/player"), playerPosition);
 			//TODO: use this.Content to load your game content here 
 		}
 
@@ -73,8 +78,16 @@ namespace ShooterGame.Controller
 			graphics.GraphicsDevice.Clear(Color.Firebrick);
 
 			//TODO: Add your drawing code here
-
 			base.Draw(gameTime);
+
+			// Start drawing 
+			spriteBatch.Begin(); 
+			// Draw the Player 
+			player.Draw(spriteBatch); 
+
+
+			// Stop drawing 
+			spriteBatch.End();
 		}
 	}
 }

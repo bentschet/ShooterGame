@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{636CCA04-F0EC-43FF-92DB-BBFF290CABC5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShooterGame/Controller/Game1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShooterGame/Model/Player.cs">
     <Files>
-      <File FileName="ShooterGame/Controller/Game1.cs" Line="40" Column="39" />
-      <File FileName="ShooterGame/Controller/Program.cs" Line="1" Column="1" />
+      <File FileName="ShooterGame/Controller/ShooterGame.cs" Line="77" Column="24" />
+      <File FileName="ShooterGame/Controller/Program.cs" Line="14" Column="33" />
+      <File FileName="ShooterGame/Model/Player.cs" Line="8" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
