@@ -3,7 +3,6 @@
     <Files>
       <File FileName="ShooterGame/Controller/Game1.cs" Line="40" Column="39" />
       <File FileName="ShooterGame/Controller/Program.cs" Line="1" Column="1" />
-      <File FileName="ShooterGame/Content/Content.mgcb" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
