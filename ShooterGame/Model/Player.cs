@@ -24,9 +24,11 @@ namespace ShooterGame
 			Health = 100;
 		}
 
-		public void Update()
+		// Update the player animation
+		public void Update(GameTime gameTime)
 		{
-			
+			playerAnimation.Position = Position;
+			playerAnimation.Update(gameTime);
 		}
 
 		public void Draw(SpriteBatch spriteBatch)
